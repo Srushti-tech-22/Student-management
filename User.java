@@ -1,6 +1,7 @@
 package models;
 
 public class User {
+    // Attributes
     public String userId;
     public String username;
     public String email;
@@ -10,6 +11,7 @@ public class User {
     public CourseModel[] courses; // enrolled courses
     public int courseCount;
 
+    // Parameterized Constructors
     public User(String userId, String username, String email, String phone, String password, String userType) {
         this.userId = userId;
         this.username = username;
@@ -21,6 +23,7 @@ public class User {
         this.courseCount = 0;
     }
 
+    // Methods
     public boolean addCourse(CourseModel c) {
         if (courseCount < courses.length) {
             courses[courseCount++] = c;

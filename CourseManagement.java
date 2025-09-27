@@ -4,6 +4,7 @@ import models.CourseModel;
 import util.Utils;
 
 public class CourseManagement {
+    // Methods
     public CourseModel addCourse(String name, String duration) {
         CourseModel c = new CourseModel(Utils.generateCourseId(), name, duration);
         Utils.addCourse(c);
