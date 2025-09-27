@@ -4,7 +4,7 @@ import models.User;
 import util.Utils;
 
 public class UserManagement {
-
+    // Methods
     public User addStudent(String username, String email, String phone, String password) {
         User u = new User(Utils.generateUserId(), username, email, phone, password, "student");
         Utils.addUser(u);
